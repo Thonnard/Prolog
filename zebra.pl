@@ -24,10 +24,10 @@ zebra(House,Man) :-
     member(house(_,spanish,jaguar), Street),
 
     % the Japanese lives to the right of the snail keeper
-    sublist([house(_,_,snail),house(_,japanese,_)], Street),
+    subList([house(_,_,snail),house(_,japanese,_)], Street),
 
     % the snail keeper lives to the left of the blue house
-    sublist([house(_,_,snail), house(blue,_,_)], Street),
+    subList([house(_,_,snail), house(blue,_,_)], Street),
 
     % the zebra belongs to the person with nationality N
     member(house(House,Man,zebra),Street).
