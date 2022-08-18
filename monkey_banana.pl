@@ -10,7 +10,7 @@ move(state(P1,onfloor,B,H), walk(P1,P2), state(P2,onfloor,B,H)).
 % get solution (cf. trace)
 canget(state(_,_,_,has)).
 canget(State1) :-
-   move_m(State1,_,State2),
+   move(State1,_,State2),
    canget(State2).
 
 % ?- canget(state(atdoor, onfloor, atwindow, hasnot)).
