@@ -15,7 +15,7 @@ crack_safe(L) :-
     L = [A,B,C,D,_E,F,G,H,I], % A=1st digit, B=2nd digit, ... , no information about 5th digit (E)
     L ins 1..9,
     all_different(L),
-    self_different(L, 1),
+    selfDifferent(L, 1),
     (D-F #= G) #\/ (F-D #= G), % difference between D and F can be D-F or F-D
     A*B*C #= H+I,
     B+C+F #< H,
