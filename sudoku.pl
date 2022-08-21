@@ -1,6 +1,8 @@
 % sudoku solver
 % source: https://www.swi-prolog.org/man/clpfd.html
 
+:- use_module(library(clpfd)).
+
 sudoku(Rows) :-
     length(Rows, 9), maplist(same_length(Rows), Rows),
     append(Rows, Vs), Vs ins 1..9,
