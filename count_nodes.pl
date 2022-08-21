@@ -2,6 +2,7 @@
 % count nodes in a tree
 
 countNodes(nil,0).
+
 countNodes(t(L,_,R),N) :-
     countNodes(L,NL),
     countNodes(R,NR),
